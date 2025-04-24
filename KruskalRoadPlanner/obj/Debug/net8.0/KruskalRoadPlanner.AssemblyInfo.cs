@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KruskalRoadPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+839b28d1efbec0f5c57228ea4cb949b10403eb49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1728b9307d2f067f566a7279250d76dd247959d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("KruskalRoadPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KruskalRoadPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
