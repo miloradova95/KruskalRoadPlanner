@@ -2,37 +2,58 @@ using System.Collections.Generic;
 
 namespace KruskalLibrary
 {
-    public class UnionFind
+    public class UnionFind<T> where T : notnull
     {
-        private Dictionary<string, string> parent;
+        private readonly Dictionary<T, T> parent;
+        private readonly Dictionary<T, int> rank;
 
-        public UnionFind(List<string> nodes)
+        public UnionFind(IEnumerable<T> elements)
         {
-            parent = new Dictionary<string, string>();
-            foreach (var node in nodes)
+            parent = new Dictionary<T, T>();
+            rank = new Dictionary<T, int>();
+
+            foreach (var element in elements)
             {
-                parent[node] = node;
+                parent[element] = element;
+                rank[element] = 0;
             }
         }
 
-        public string Find(string node)
+        // Find with path compression
+        public T Find(T item)
         {
-            if (parent[node] != node)
-            {
-                parent[node] = Find(parent[node]); // Path compression
-            }
-            return parent[node];
+            if (!parent.ContainsKey(item))
+                throw new KeyNotFoundException("Element not found in UnionFind set.");
+
+            if (!parent[item].Equals(item))
+                parent[item] = Find(parent[item]);
+
+            return parent[item];
         }
 
-        public bool Union(string node1, string node2)
+        // Union by rank
+        public bool Union(T item1, T item2)
         {
-            string root1 = Find(node1);
-            string root2 = Find(node2);
+            T root1 = Find(item1);
+            T root2 = Find(item2);
 
-            if (root1 == root2)
+            if (root1.Equals(root2))
                 return false;
 
-            parent[root2] = root1;
+            if (rank[root1] < rank[root2])
+            {
+                parent[root1] = root2;
+            }
+            else if (rank[root1] > rank[root2])
+            {
+                parent[root2] = root1;
+            }
+            else
+            {
+                parent[root2] = root1;
+                rank[root1]++;
+            }
+
             return true;
         }
     }

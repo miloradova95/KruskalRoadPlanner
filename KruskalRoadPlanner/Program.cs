@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using KruskalLibrary;
 
-namespace KruskalLibrary
+namespace KruskalRoadPlanner
 {
     class Program
     {
@@ -17,9 +18,12 @@ namespace KruskalLibrary
             Console.WriteLine("📍 Full Road Network:");
             graph.PrintGraph();
 
-            // Apply Kruskal's algorithm
+            // Use polymorphism to select algorithm
+            IGraphAlgorithm algorithm = new Kruskal(); // Kruskal implements IGraphAlgorithm
+
+            // Apply the algorithm
             Console.WriteLine("\n🧭 Minimum Spanning Tree (Roads to Build):");
-            var mst = Kruskal.FindMST(graph);
+            var mst = algorithm.FindMinimumSpanningTree(graph);
 
             foreach (var edge in mst)
             {
