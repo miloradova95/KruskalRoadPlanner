@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace KruskalRoadPlanner
+namespace KruskalLibrary
 {
     public class Graph
     {

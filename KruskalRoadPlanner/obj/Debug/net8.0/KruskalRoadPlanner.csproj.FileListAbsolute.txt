@@ -13,3 +13,7 @@ C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\Krus
 C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\obj\Debug\net8.0\KruskalRoadPlanner.pdb
 C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\obj\Debug\net8.0\KruskalRoadPlanner.genruntimeconfig.cache
 C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\obj\Debug\net8.0\ref\KruskalRoadPlanner.dll
+C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\bin\Debug\net8.0\KruskalLibrary.dll
+C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\bin\Debug\net8.0\KruskalLibrary.pdb
+C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\obj\Debug\net8.0\KruskalRoadPlanner.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\FH St. Pölten\4. Semester\C#\FinalProject\KruskalRoadPlanner\KruskalRoadPlanner\obj\Debug\net8.0\KruskalR.5359E70E.Up2Date
