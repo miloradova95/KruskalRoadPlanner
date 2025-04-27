@@ -1,6 +1,6 @@
 ﻿namespace KruskalLibrary
 {
-    public class Connection
+    public class Connection // base class for edge and vertex classes, holds the connection properties from and to
     {
         public string From { get; set; }
         public string To { get; set; }

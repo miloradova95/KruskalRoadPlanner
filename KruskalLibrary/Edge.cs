@@ -1,6 +1,8 @@
 namespace KruskalLibrary
 {
-    public class Edge : Connection
+// class representing an edge in a graph, inherits from Connection 
+//and adds a weight property to represent the cost of the edge
+    public class Edge : Connection  
     {
         public int Weight { get; set; }
 

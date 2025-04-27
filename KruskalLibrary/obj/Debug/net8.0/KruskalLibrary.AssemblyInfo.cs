@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KruskalLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a422636e4aac34bfa554af4df42c08134df8719e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5c6014419c31c5da8f4242e0f131e964d716f5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KruskalLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KruskalLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
